@@ -36,8 +36,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#price">Цены</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#products">Товары</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Фотографии</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
                     </ul>
                     <span class="navbar-text">
@@ -54,64 +53,28 @@
                 <a class="btn btn-lg btn-light" href="#contact">Контакты</a>
             </div>
         </header>
-        <!--Price Section-->
-        <div id="price" class="container padding text-center p-4">
-            <h3 class="fw-bolder">Текст про стоимость</h3>
-        </div>
         <!-- About section-->
         <section id="products" class="bg-light py-5 border-bottom">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="text-center mb-5">
-                        <h2 class="fw-bolder">Товары</h2>
+                        <h2 class="fw-bolder">Фотографии</h2>
                     </div>
                     <div class="row gx-5">
-                            <div class="col-sm-4 d-flex justify-content-center mb-5">
-                                <div class="card" style="max-width: 18rem; min-height: 200px;">
-                                    <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TQle9ua8Sj3kXkxdG-xo_QHaE9%26pid%3DApi&f=1&ipt=f467f93a444eeaffdebaf8aa3f68803f047c49f28de535b62e24df3b1a1562e3&ipo=images" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Забор</h5>
-                                        <p class="card-text">Стоимость: 88 руб за погонный метр.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Дополнительная информация</small>
-                                    </div>
+                        <section class="containercustom">
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img id="slide-1" src="assets/fence1.jpg" alt="fence" />
+                                    <img id="slide-2" src="assets/fence2.jpg" alt="fence" />
+                                    <img id="slide-3" src="assets/fence3.jpg" alt="fence" />
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
                                 </div>
                             </div>
-
-                            <div class="col-sm-4 d-flex justify-content-center mb-5">
-                                <div class="card" style="max-width: 18rem; min-height: 200px;">
-                                    <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TQle9ua8Sj3kXkxdG-xo_QHaE9%26pid%3DApi&f=1&ipt=f467f93a444eeaffdebaf8aa3f68803f047c49f28de535b62e24df3b1a1562e3&ipo=images" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Забор</h5>
-                                        <p class="card-text">Стоимость: 88 руб за погонный метр.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Дополнительная информация</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-4 d-flex justify-content-center mb-5">
-                                <div class="card" style="max-width: 18rem; min-height: 200px;">
-                                    <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TQle9ua8Sj3kXkxdG-xo_QHaE9%26pid%3DApi&f=1&ipt=f467f93a444eeaffdebaf8aa3f68803f047c49f28de535b62e24df3b1a1562e3&ipo=images" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Забор</h5>
-                                        <p class="card-text">Стоимость: 88 руб за погонный метр.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Дополнительная информация</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="text-center mb-5">
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Смотреть еще...</button>
-                            </div>
-
-                            <!--Collapsable section-->
-                            
-                            
+                        </section>
                     </div>
                 </div>
             </div>
@@ -129,15 +92,16 @@
                             <div class="form-group pb-3">
                                 <label for="inputName">ФИО</label>
                                 <input name="ФИО" type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" required>
-                            </div>  
+                            </div>
                             <div class="form-group pb-3">
-                                <label for="inputTel">Телефонный Номер</label>
-                                <input name="Номер"  class="form-control" id="exampleInputTel" aria-describedby="telHelp" type="tel" id="phone" name="phone" placeholder="+7 961-300-1414" required>
-                            </div>  
+                                <label for="inputPhone">Тел. Номер</label>
+                                <input onInput="this.value = formatNumber(this.value)" name="Номер"  class="form-control" id="exampleInputTel" aria-describedby="telHelp" minlength="10" maxlength="16" type="tel" id="phone" name="phone" placeholder="79618001423" required>
+                            </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
                             </div>
+                            
                             <div class="form-group pb-3">
                                 <label for="message">Сообщение</label>
                                 <input class="form-control" name="Сообщение" id="message" type="text" placeholder="Пишите ваше сообщение..." style="height: 10rem"></input>
@@ -159,9 +123,18 @@
                 <p class="m-0 text-center text-white">&copy; Забор Штакетник Крым 2023</p>
             </div>
         </footer>
+        <script>
+            function formatNumber(number){
+            
+            let result =  number.replace(/(\d{1})(\d{3})(\d{3})(\d{4})/,'+$1 ($2) $3-$4');
+            return result;
+            }
+
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
     </body>
 </html>
