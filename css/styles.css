@@ -147,7 +147,10 @@ h3, .h3 {
 }
 
 .custombg{
-  background-color: #3cb371;
+  background-image: url(https://cdn.discordapp.com/attachments/1093461085912309842/1100443278979125288/88.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
